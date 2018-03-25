@@ -5,10 +5,15 @@
     <meta charset="utf-8">
     <script type="text/javascript">
 
-           function cube() {
-               var num = document.getElementById("n1");
-               num.value = Math.pow(num.value, 3);
-           }
+        function cube() {
+            var num = document.getElementById("n1");
+            num.value = Math.pow(num.value, 3);
+        }
+
+        function sine() {
+            var num = document.getElementById("n1");
+            num.value = Math.sin(num.value);
+        }
 
     </script>
 </head>
@@ -19,5 +24,6 @@
         <input id="n1" type="text">
     </form>
     <p><button onclick="cube()">x^3</button></p>
+    <p><button onclick="sine()">sin(x)</button></p>
 </body>
 </html>
